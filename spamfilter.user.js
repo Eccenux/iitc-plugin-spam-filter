@@ -2,7 +2,7 @@
 // @id             iitc-plugin-spam-filter@3ch01c
 // @name           IITC plugin: spam-filter
 // @category       Misc
-// @version        0.0.5
+// @version        0.0.6
 // @namespace      https://github.com/3ch01c/ingress-intel-total-conversion
 // @description    This is a spam filter plugin which filters out SPAM from Comm messages.
 // @include        https://*.ingress.com/intel*
@@ -36,7 +36,7 @@ var setup = function() {
 				continue;
 			}
 			var text = data[key][2];
-			if (text.search(/xmps\.biz|ingress-(shop|store)|(store|shop)-ingress|ingressfarm\.com/i)>=0) {
+			if (text.search(/xmps\.biz|ecwid\.com|ingress-(shop|store)|(store|shop)-ingress|ingressfarm\.com/i)>=0) {
 				continue;
 			}
 			filteredData[key] = data[key];
